@@ -31,7 +31,7 @@
 	<body>
 		<header style="background-image: url('{% include relative-src.html src=page.background_image_path %}');" {% if page.large_header %}class="main-hero"{% endif %}>
 			<div class="container">
-				<h1><a href="{{ site.baseurl }}/">{{ site.data.company.title }}</a></h1>
+				<h1><a href="/">Science <br> Resists</a></h1>
 				<nav>
 					<ul>
 						{% assign nav_pages = site.html_pages | where: 'show_in_navigation', true | sort: 'navigation_order' %}
@@ -62,7 +62,7 @@
 		{% else %}
 			<section class="quote-section">
 				<p class="container editable">
-					<a href="{{ site.baseurl }}/advice/">March Information</a> [pending].
+					<a href="{{ site.baseurl }}/march/">March Information</a> [pending].
 				</p>
 			</section>
 		{% endif %}
